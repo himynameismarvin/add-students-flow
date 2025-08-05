@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Add Students Flow
+
+A React prototype for adding students with AI parsing and account creation.
+
+🚀 **Live Demo**: [Deployed on Vercel](https://add-students-flow.vercel.app)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
