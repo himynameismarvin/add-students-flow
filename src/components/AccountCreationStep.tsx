@@ -3,7 +3,7 @@ import { Student } from '../types/Student';
 import { generateAndDownloadStudentPDF, generateAndDownloadAllStudentsPDF } from '../utils/pdfGenerator';
 import { Button } from './ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
-import { CheckCircle, XCircle, Loader2, Download } from 'lucide-react';
+import { CheckCircle, XCircle, Loader2, Download, RotateCcw } from 'lucide-react';
 
 interface AccountCreationStepProps {
   students: Student[];
@@ -100,44 +100,48 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
     }
   }, [students]); // Remove createAccounts from dependencies
 
+  const retryIndividualAccount = async (index: number) => {
+    const student = students[index];
+    
+    setCreationStatuses(prev => 
+      prev.map((status, i) => 
+        i === index 
+          ? { ...status, status: 'creating' as CreationStatus, error: undefined }
+          : status
+      )
+    );
+    
+    try {
+      await simulateAccountCreation(student);
+      setCreationStatuses(prev => 
+        prev.map((status, i) => 
+          i === index 
+            ? { ...status, status: 'completed' as CreationStatus }
+            : status
+        )
+      );
+    } catch (error) {
+      setCreationStatuses(prev => 
+        prev.map((status, i) => 
+          i === index 
+            ? { 
+                ...status, 
+                status: 'error' as CreationStatus,
+                error: error instanceof Error ? error.message : 'Unknown error'
+              }
+            : status
+        )
+      );
+    }
+  };
+
   const retryFailedAccounts = async () => {
     const failedIndexes = creationStatuses
       .map((status, index) => status.status === 'error' ? index : -1)
       .filter(index => index !== -1);
     
     for (const index of failedIndexes) {
-      const student = students[index];
-      
-      setCreationStatuses(prev => 
-        prev.map((status, i) => 
-          i === index 
-            ? { ...status, status: 'creating' as CreationStatus, error: undefined }
-            : status
-        )
-      );
-      
-      try {
-        await simulateAccountCreation(student);
-        setCreationStatuses(prev => 
-          prev.map((status, i) => 
-            i === index 
-              ? { ...status, status: 'completed' as CreationStatus }
-              : status
-          )
-        );
-      } catch (error) {
-        setCreationStatuses(prev => 
-          prev.map((status, i) => 
-            i === index 
-              ? { 
-                  ...status, 
-                  status: 'error' as CreationStatus,
-                  error: error instanceof Error ? error.message : 'Unknown error'
-                }
-              : status
-          )
-        );
-      }
+      await retryIndividualAccount(index);
     }
   };
 
@@ -218,6 +222,18 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
                       title="Download PDF credentials"
                     >
                       <Download className="h-4 w-4" />
+                    </Button>
+                  )}
+                  
+                  {statusItem.status === 'error' && (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      onClick={() => retryIndividualAccount(index)}
+                      title="Retry account creation"
+                      className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+                    >
+                      <RotateCcw className="h-4 w-4" />
                     </Button>
                   )}
                 </div>

@@ -6,10 +6,10 @@ Attempting to bind to HOST environment variable: localhost
 If this was unintentional, check that you haven't mistakenly set it in your shell.
 Learn more here: https://cra.link/advanced-config
 
-(node:55807) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(node:66419) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
 (Use `node --trace-deprecation ...` to show where the warning was created)
-(node:55807) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
-(node:55807) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:66419) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:66419) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
 Compiled with warnings.
@@ -95,6 +95,96 @@ src/components/ui/card.tsx
 webpack compiled with 1 warning
 No issues found.
 Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 6:51:   'RotateCcw' is defined but never used                                                                                                    @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 6:51:   'RotateCcw' is defined but never used                                                                                                    @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 6:51:   'RotateCcw' is defined but never used                                                                                                    @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 6:51:   'RotateCcw' is defined but never used                                                                                                    @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 6:51:   'RotateCcw' is defined but never used                                                                                                    @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 6:51:   'RotateCcw' is defined but never used                                                                                                    @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+Compiling...
+No issues found.
 Compiled with warnings.
 
 [eslint] 

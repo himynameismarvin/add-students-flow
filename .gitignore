@@ -19,6 +19,9 @@
 .env.test.local
 .env.production.local
 
+# Generated/temporary scripts (add if you generate them automatically)
+# *.sh
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

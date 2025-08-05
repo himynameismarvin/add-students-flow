@@ -3,8 +3,11 @@ import { Student, ParsedStudentData } from '../types/Student';
 import { generatePassword, generateUniqueId } from '../utils/passwordGenerator';
 
 // Initialize OpenAI client with GitHub Models API
+const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
+console.log('🔑 GitHub token loaded:', githubToken ? `${githubToken.substring(0, 8)}...` : 'MISSING');
+
 const openai = new OpenAI({
-  apiKey: process.env.REACT_APP_GITHUB_TOKEN || 'demo-key',
+  apiKey: githubToken || 'demo-key',
   baseURL: 'https://models.github.ai/inference',
   dangerouslyAllowBrowser: true // Only for demo purposes
 });
