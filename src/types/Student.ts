@@ -17,4 +17,4 @@ export interface ParsedStudentData {
   errors: string[];
 }
 
-export type ModalStep = 'input' | 'review' | 'creation';
+export type ModalStep = 'accountType' | 'input' | 'review' | 'creation' | 'linkExisting';

@@ -212,3 +212,421 @@ src/components/ui/card.tsx
 
 webpack compiled with 1 warning
 No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+Files successfully emitted, waiting for typecheck results...
+Issues checking in progress...
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:  'AccountTypeSelection' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 7:8:  'LinkExistingAccounts' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:  'AccountTypeSelection' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 7:8:  'LinkExistingAccounts' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:  'AccountTypeSelection' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 7:8:  'LinkExistingAccounts' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:  'AccountTypeSelection' is defined but never used  @typescript-eslint/no-unused-vars
+  Line 7:8:  'LinkExistingAccounts' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:   'AccountTypeSelection' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 7:8:   'LinkExistingAccounts' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleSelectCreateNew' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 64:9:  'handleSelectLinkExisting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:   'AccountTypeSelection' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 7:8:   'LinkExistingAccounts' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleSelectCreateNew' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 64:9:  'handleSelectLinkExisting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:   'AccountTypeSelection' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 7:8:   'LinkExistingAccounts' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleSelectCreateNew' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 64:9:  'handleSelectLinkExisting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:   'AccountTypeSelection' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 7:8:   'LinkExistingAccounts' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleSelectCreateNew' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 64:9:  'handleSelectLinkExisting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:   'AccountTypeSelection' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 7:8:   'LinkExistingAccounts' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleSelectCreateNew' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 64:9:  'handleSelectLinkExisting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/AddStudentsModal.tsx
+  Line 3:8:   'AccountTypeSelection' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 7:8:   'LinkExistingAccounts' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleSelectCreateNew' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  Line 64:9:  'handleSelectLinkExisting' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+
+src/components/StudentReviewStep.tsx
+  Line 50:9:  'canProceed' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 36:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
