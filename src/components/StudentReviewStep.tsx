@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useImperativeHandle, forwardRef } from 'react';
 import { Student } from '../types/Student';
 import StudentCard from './StudentCard';
 import { Card, CardContent } from './ui/card';
 import { Table, TableBody, TableHead, TableHeader, TableRow } from './ui/table';
 import { Users } from 'lucide-react';
 import { generatePassword } from '../utils/passwordGenerator';
-import { generateUsername, capitalizeFirstName } from '../utils/usernameGenerator';
+import { capitalizeFirstName } from '../utils/usernameGenerator';
 
 interface StudentReviewStepProps {
   students: Student[];
@@ -14,27 +14,26 @@ interface StudentReviewStepProps {
   onBack: () => void;
 }
 
-const StudentReviewStep: React.FC<StudentReviewStepProps> = ({
+export interface StudentReviewStepRef {
+  handleContinue: () => void;
+}
+
+const StudentReviewStep = forwardRef<StudentReviewStepRef, StudentReviewStepProps>(({
   students,
   onStudentsChange,
   onNext,
   onBack
-}) => {
+}, ref) => {
   const [showValidation, setShowValidation] = useState(false);
   
-  // Ensure all students have usernames (computed, not stored in state to avoid loops)
-  const studentsWithUsernames = students.map(student => ({
-    ...student,
-    username: student.username || generateUsername(student.firstName, student.lastInitial)
-  }));
+  // No username generation needed anymore
   
   const handleStudentUpdate = (index: number, updatedStudent: Student) => {
     const newStudents = [...students];
-    // Capitalize first name and regenerate username if firstName or lastInitial changed
+    // Capitalize first name
     const capitalizedStudent = {
       ...updatedStudent,
-      firstName: capitalizeFirstName(updatedStudent.firstName),
-      username: generateUsername(updatedStudent.firstName, updatedStudent.lastInitial)
+      firstName: capitalizeFirstName(updatedStudent.firstName)
     };
     newStudents[index] = capitalizedStudent;
     onStudentsChange(newStudents);
@@ -58,17 +57,30 @@ const StudentReviewStep: React.FC<StudentReviewStepProps> = ({
     password: !student.password.trim() ? 'required' : (!/^[A-Za-z0-9]+$/.test(student.password) ? 'invalid' : null)
   });
 
-  const validationErrors = studentsWithUsernames.map(validateStudent);
+  const validationErrors = students.map(validateStudent);
   const hasErrors = validationErrors.some(errors => errors.firstName || errors.lastInitial || errors.password);
 
+
+  const handleContinue = () => {
+    setShowValidation(true);
+    
+    if (!hasErrors) {
+      onNext();
+    }
+    // If there are errors, validation will show and user needs to fix them
+  };
+
+  // Expose handleContinue to parent using useImperativeHandle
+  useImperativeHandle(ref, () => ({
+    handleContinue
+  }), [handleContinue]);
 
   const handleAddStudent = () => {
     const newStudent: Student = {
       id: Date.now().toString(),
       firstName: '',
       lastInitial: '',
-      password: generatePassword(),
-      username: ''
+      password: generatePassword()
     };
     onStudentsChange([...students, newStudent]);
     // Reset validation when adding a new student
@@ -80,7 +92,7 @@ const StudentReviewStep: React.FC<StudentReviewStepProps> = ({
       {/* Header section */}
       <div className="space-y-2">
         <p className="text-sm text-muted-foreground">
-          Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+          Review <strong>{students.length}</strong> student{students.length !== 1 ? 's' : ''} and make any necessary changes.
         </p>
         {showValidation && hasErrors && (
           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
@@ -98,7 +110,7 @@ const StudentReviewStep: React.FC<StudentReviewStepProps> = ({
       </div>
 
       {/* Main content area */}
-      {studentsWithUsernames.length === 0 ? (
+      {students.length === 0 ? (
         <Card>
           <CardContent className="text-center py-12">
             <Users className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
@@ -113,15 +125,14 @@ const StudentReviewStep: React.FC<StudentReviewStepProps> = ({
               <Table>
                 <TableHeader>
                   <TableRow className="hover:bg-transparent">
-                    <TableHead className="w-1/4">First name</TableHead>
-                    <TableHead className="w-20 text-center">Last initial</TableHead>
-                    <TableHead className="w-1/4">Password</TableHead>
-                    <TableHead className="w-1/4">Username</TableHead>
-                    <TableHead className="w-16"></TableHead>
+                    <TableHead className="w-80">First name</TableHead>
+                    <TableHead className="w-28 text-center">Last initial</TableHead>
+                    <TableHead className="w-80">Password</TableHead>
+                    <TableHead className="w-12"></TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
-                  {studentsWithUsernames.map((student, index) => (
+                  {students.map((student, index) => (
                     <StudentCard
                       key={student.id}
                       student={student}
@@ -147,6 +158,8 @@ const StudentReviewStep: React.FC<StudentReviewStepProps> = ({
       )}
     </div>
   );
-};
+});
+
+StudentReviewStep.displayName = 'StudentReviewStep';
 
 export default StudentReviewStep;

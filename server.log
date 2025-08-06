@@ -4069,3 +4069,2865 @@ src/components/ui/card.tsx
 
 webpack compiled with 1 warning
 No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/StudentCard.tsx
+  Line 118:12:  'Lock' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+ERROR in [eslint] 
+src/components/StudentCard.tsx
+  Line 118:12:  'Lock' is not defined  react/jsx-no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error and 1 warning
+ERROR in src/components/StudentCard.tsx:118:11
+TS2607: JSX element class does not support attributes because it does not have a 'props' property.
+    116 |             readOnly
+    117 |           />
+  > 118 |           <Lock className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        |           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    119 |         </div>
+    120 |       </TableCell>
+    121 |       
+
+ERROR in src/components/StudentCard.tsx:118:12
+TS2786: 'Lock' cannot be used as a JSX component.
+  Its instance type 'Lock' is not a valid JSX element.
+    Type 'Lock' is missing the following properties from type 'ElementClass': render, context, setState, forceUpdate, and 2 more.
+    116 |             readOnly
+    117 |           />
+  > 118 |           <Lock className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        |            ^^^^
+    119 |         </div>
+    120 |       </TableCell>
+    121 |       
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/StudentReviewStep.tsx:28:35
+TS2304: Cannot find name 'generateUsername'.
+    26 |   const studentsWithUsernames = students.map(student => ({
+    27 |     ...student,
+  > 28 |     username: student.username || generateUsername(student.firstName, student.lastInitial)
+       |                                   ^^^^^^^^^^^^^^^^
+    29 |   }));
+    30 |   
+    31 |   const handleStudentUpdate = (index: number, updatedStudent: Student) => {
+
+ERROR in src/components/StudentReviewStep.tsx:37:17
+TS2304: Cannot find name 'generateUsername'.
+    35 |       ...updatedStudent,
+    36 |       firstName: capitalizeFirstName(updatedStudent.firstName),
+  > 37 |       username: generateUsername(updatedStudent.firstName, updatedStudent.lastInitial)
+       |                 ^^^^^^^^^^^^^^^^
+    38 |     };
+    39 |     newStudents[index] = capitalizedStudent;
+    40 |     onStudentsChange(newStudents);
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/StudentReviewStep.tsx:33:17
+TS2304: Cannot find name 'generateUsername'.
+    31 |       ...updatedStudent,
+    32 |       firstName: capitalizeFirstName(updatedStudent.firstName),
+  > 33 |       username: generateUsername(updatedStudent.firstName, updatedStudent.lastInitial)
+       |                 ^^^^^^^^^^^^^^^^
+    34 |     };
+    35 |     newStudents[index] = capitalizedStudent;
+    36 |     onStudentsChange(newStudents);
+
+ERROR in src/components/StudentReviewStep.tsx:57:28
+TS2304: Cannot find name 'studentsWithUsernames'.
+    55 |   });
+    56 |
+  > 57 |   const validationErrors = studentsWithUsernames.map(validateStudent);
+       |                            ^^^^^^^^^^^^^^^^^^^^^
+    58 |   const hasErrors = validationErrors.some(errors => errors.firstName || errors.lastInitial || errors.password);
+    59 |
+    60 |
+
+ERROR in src/components/StudentReviewStep.tsx:58:43
+TS7006: Parameter 'errors' implicitly has an 'any' type.
+    56 |
+    57 |   const validationErrors = studentsWithUsernames.map(validateStudent);
+  > 58 |   const hasErrors = validationErrors.some(errors => errors.firstName || errors.lastInitial || errors.password);
+       |                                           ^^^^^^
+    59 |
+    60 |
+    61 |   const handleAddStudent = () => {
+
+ERROR in src/components/StudentReviewStep.tsx:79:27
+TS2304: Cannot find name 'studentsWithUsernames'.
+    77 |       <div className="space-y-2">
+    78 |         <p className="text-sm text-muted-foreground">
+  > 79 |           Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+       |                           ^^^^^^^^^^^^^^^^^^^^^
+    80 |         </p>
+    81 |         {showValidation && hasErrors && (
+    82 |           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
+
+ERROR in src/components/StudentReviewStep.tsx:79:74
+TS2304: Cannot find name 'studentsWithUsernames'.
+    77 |       <div className="space-y-2">
+    78 |         <p className="text-sm text-muted-foreground">
+  > 79 |           Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+       |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+    80 |         </p>
+    81 |         {showValidation && hasErrors && (
+    82 |           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
+
+ERROR in src/components/StudentReviewStep.tsx:85:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    83 |             <strong>Please fix the following errors:</strong>
+    84 |             <ul className="mt-1 list-disc list-inside">
+  > 85 |               {validationErrors.some(e => e.firstName === 'required') && <li>First name is required</li>}
+       |                                      ^
+    86 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+    87 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+    88 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+
+ERROR in src/components/StudentReviewStep.tsx:86:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    84 |             <ul className="mt-1 list-disc list-inside">
+    85 |               {validationErrors.some(e => e.firstName === 'required') && <li>First name is required</li>}
+  > 86 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+       |                                      ^
+    87 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+    88 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+    89 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+
+ERROR in src/components/StudentReviewStep.tsx:87:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    85 |               {validationErrors.some(e => e.firstName === 'required') && <li>First name is required</li>}
+    86 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+  > 87 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+       |                                      ^
+    88 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+    89 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+    90 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+
+ERROR in src/components/StudentReviewStep.tsx:88:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    86 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+    87 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+  > 88 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+       |                                      ^
+    89 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+    90 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+    91 |             </ul>
+
+ERROR in src/components/StudentReviewStep.tsx:89:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    87 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+    88 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+  > 89 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+       |                                      ^
+    90 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+    91 |             </ul>
+    92 |           </div>
+
+ERROR in src/components/StudentReviewStep.tsx:90:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    88 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+    89 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+  > 90 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+       |                                      ^
+    91 |             </ul>
+    92 |           </div>
+    93 |         )}
+
+ERROR in src/components/StudentReviewStep.tsx:97:8
+TS2304: Cannot find name 'studentsWithUsernames'.
+     95 |
+     96 |       {/* Main content area */}
+  >  97 |       {studentsWithUsernames.length === 0 ? (
+        |        ^^^^^^^^^^^^^^^^^^^^^
+     98 |         <Card>
+     99 |           <CardContent className="text-center py-12">
+    100 |             <Users className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+
+ERROR in src/components/StudentReviewStep.tsx:119:20
+TS2304: Cannot find name 'studentsWithUsernames'.
+    117 |                 </TableHeader>
+    118 |                 <TableBody>
+  > 119 |                   {studentsWithUsernames.map((student, index) => (
+        |                    ^^^^^^^^^^^^^^^^^^^^^
+    120 |                     <StudentCard
+    121 |                       key={student.id}
+    122 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:119:47
+TS7006: Parameter 'student' implicitly has an 'any' type.
+    117 |                 </TableHeader>
+    118 |                 <TableBody>
+  > 119 |                   {studentsWithUsernames.map((student, index) => (
+        |                                               ^^^^^^^
+    120 |                     <StudentCard
+    121 |                       key={student.id}
+    122 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:119:56
+TS7006: Parameter 'index' implicitly has an 'any' type.
+    117 |                 </TableHeader>
+    118 |                 <TableBody>
+  > 119 |                   {studentsWithUsernames.map((student, index) => (
+        |                                                        ^^^^^
+    120 |                     <StudentCard
+    121 |                       key={student.id}
+    122 |                       student={student}
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/StudentReviewStep.tsx:56:28
+TS2304: Cannot find name 'studentsWithUsernames'.
+    54 |   });
+    55 |
+  > 56 |   const validationErrors = studentsWithUsernames.map(validateStudent);
+       |                            ^^^^^^^^^^^^^^^^^^^^^
+    57 |   const hasErrors = validationErrors.some(errors => errors.firstName || errors.lastInitial || errors.password);
+    58 |
+    59 |
+
+ERROR in src/components/StudentReviewStep.tsx:57:43
+TS7006: Parameter 'errors' implicitly has an 'any' type.
+    55 |
+    56 |   const validationErrors = studentsWithUsernames.map(validateStudent);
+  > 57 |   const hasErrors = validationErrors.some(errors => errors.firstName || errors.lastInitial || errors.password);
+       |                                           ^^^^^^
+    58 |
+    59 |
+    60 |   const handleAddStudent = () => {
+
+ERROR in src/components/StudentReviewStep.tsx:78:27
+TS2304: Cannot find name 'studentsWithUsernames'.
+    76 |       <div className="space-y-2">
+    77 |         <p className="text-sm text-muted-foreground">
+  > 78 |           Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+       |                           ^^^^^^^^^^^^^^^^^^^^^
+    79 |         </p>
+    80 |         {showValidation && hasErrors && (
+    81 |           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
+
+ERROR in src/components/StudentReviewStep.tsx:78:74
+TS2304: Cannot find name 'studentsWithUsernames'.
+    76 |       <div className="space-y-2">
+    77 |         <p className="text-sm text-muted-foreground">
+  > 78 |           Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+       |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+    79 |         </p>
+    80 |         {showValidation && hasErrors && (
+    81 |           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
+
+ERROR in src/components/StudentReviewStep.tsx:84:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    82 |             <strong>Please fix the following errors:</strong>
+    83 |             <ul className="mt-1 list-disc list-inside">
+  > 84 |               {validationErrors.some(e => e.firstName === 'required') && <li>First name is required</li>}
+       |                                      ^
+    85 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+    86 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+    87 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+
+ERROR in src/components/StudentReviewStep.tsx:85:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    83 |             <ul className="mt-1 list-disc list-inside">
+    84 |               {validationErrors.some(e => e.firstName === 'required') && <li>First name is required</li>}
+  > 85 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+       |                                      ^
+    86 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+    87 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+    88 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+
+ERROR in src/components/StudentReviewStep.tsx:86:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    84 |               {validationErrors.some(e => e.firstName === 'required') && <li>First name is required</li>}
+    85 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+  > 86 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+       |                                      ^
+    87 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+    88 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+    89 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+
+ERROR in src/components/StudentReviewStep.tsx:87:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    85 |               {validationErrors.some(e => e.firstName === 'invalid') && <li>First names must only contain letters, numbers, and hyphens</li>}
+    86 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+  > 87 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+       |                                      ^
+    88 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+    89 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+    90 |             </ul>
+
+ERROR in src/components/StudentReviewStep.tsx:88:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    86 |               {validationErrors.some(e => e.lastInitial === 'required') && <li>Last initial is required</li>}
+    87 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+  > 88 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+       |                                      ^
+    89 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+    90 |             </ul>
+    91 |           </div>
+
+ERROR in src/components/StudentReviewStep.tsx:89:38
+TS7006: Parameter 'e' implicitly has an 'any' type.
+    87 |               {validationErrors.some(e => e.lastInitial === 'invalid') && <li>Last initial must be a letter</li>}
+    88 |               {validationErrors.some(e => e.password === 'required') && <li>Password is required</li>}
+  > 89 |               {validationErrors.some(e => e.password === 'invalid') && <li>Passwords must only contain letters and numbers</li>}
+       |                                      ^
+    90 |             </ul>
+    91 |           </div>
+    92 |         )}
+
+ERROR in src/components/StudentReviewStep.tsx:96:8
+TS2304: Cannot find name 'studentsWithUsernames'.
+    94 |
+    95 |       {/* Main content area */}
+  > 96 |       {studentsWithUsernames.length === 0 ? (
+       |        ^^^^^^^^^^^^^^^^^^^^^
+    97 |         <Card>
+    98 |           <CardContent className="text-center py-12">
+    99 |             <Users className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+
+ERROR in src/components/StudentReviewStep.tsx:118:20
+TS2304: Cannot find name 'studentsWithUsernames'.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                    ^^^^^^^^^^^^^^^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:47
+TS7006: Parameter 'student' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                               ^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:56
+TS7006: Parameter 'index' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                                        ^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/StudentReviewStep.tsx:78:27
+TS2304: Cannot find name 'studentsWithUsernames'.
+    76 |       <div className="space-y-2">
+    77 |         <p className="text-sm text-muted-foreground">
+  > 78 |           Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+       |                           ^^^^^^^^^^^^^^^^^^^^^
+    79 |         </p>
+    80 |         {showValidation && hasErrors && (
+    81 |           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
+
+ERROR in src/components/StudentReviewStep.tsx:78:74
+TS2304: Cannot find name 'studentsWithUsernames'.
+    76 |       <div className="space-y-2">
+    77 |         <p className="text-sm text-muted-foreground">
+  > 78 |           Review <strong>{studentsWithUsernames.length}</strong> student{studentsWithUsernames.length !== 1 ? 's' : ''} and make any necessary changes.
+       |                                                                          ^^^^^^^^^^^^^^^^^^^^^
+    79 |         </p>
+    80 |         {showValidation && hasErrors && (
+    81 |           <div className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-md p-3" style={{ borderColor: '#EBEAE8' }}>
+
+ERROR in src/components/StudentReviewStep.tsx:96:8
+TS2304: Cannot find name 'studentsWithUsernames'.
+    94 |
+    95 |       {/* Main content area */}
+  > 96 |       {studentsWithUsernames.length === 0 ? (
+       |        ^^^^^^^^^^^^^^^^^^^^^
+    97 |         <Card>
+    98 |           <CardContent className="text-center py-12">
+    99 |             <Users className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+
+ERROR in src/components/StudentReviewStep.tsx:118:20
+TS2304: Cannot find name 'studentsWithUsernames'.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                    ^^^^^^^^^^^^^^^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:47
+TS7006: Parameter 'student' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                               ^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:56
+TS7006: Parameter 'index' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                                        ^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/StudentReviewStep.tsx:96:8
+TS2304: Cannot find name 'studentsWithUsernames'.
+    94 |
+    95 |       {/* Main content area */}
+  > 96 |       {studentsWithUsernames.length === 0 ? (
+       |        ^^^^^^^^^^^^^^^^^^^^^
+    97 |         <Card>
+    98 |           <CardContent className="text-center py-12">
+    99 |             <Users className="h-12 w-12 text-muted-foreground mx-auto mb-4" />
+
+ERROR in src/components/StudentReviewStep.tsx:118:20
+TS2304: Cannot find name 'studentsWithUsernames'.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                    ^^^^^^^^^^^^^^^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:47
+TS7006: Parameter 'student' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                               ^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:56
+TS7006: Parameter 'index' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                                        ^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/StudentReviewStep.tsx:118:20
+TS2304: Cannot find name 'studentsWithUsernames'.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                    ^^^^^^^^^^^^^^^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:47
+TS7006: Parameter 'student' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                               ^^^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+ERROR in src/components/StudentReviewStep.tsx:118:56
+TS7006: Parameter 'index' implicitly has an 'any' type.
+    116 |                 </TableHeader>
+    117 |                 <TableBody>
+  > 118 |                   {studentsWithUsernames.map((student, index) => (
+        |                                                        ^^^^^
+    119 |                     <StudentCard
+    120 |                       key={student.id}
+    121 |                       student={student}
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 60:9:  'handleContinue' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 60:9:  'handleContinue' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 1:27:  'useImperativeHandle' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 1:48:  'forwardRef' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleContinue' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 1:27:  'useImperativeHandle' is defined but never used      @typescript-eslint/no-unused-vars
+  Line 1:48:  'forwardRef' is defined but never used               @typescript-eslint/no-unused-vars
+  Line 60:9:  'handleContinue' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/StudentReviewStep.tsx
+Syntax error: ')' expected (156:1)
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+ERROR in ./src/components/StudentReviewStep.tsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/marvinsanchez/projects/add-students/add-students-flow/src/components/StudentReviewStep.tsx: Missing initializer in const declaration. (21:81)
+
+  19 | }
+  20 |
+> 21 | const StudentReviewStep = forwardRef<StudentReviewStepRef, StudentReviewStepProps>(({
+     |                                                                                  ^
+  22 |   students,
+  23 |   onStudentsChange,
+  24 |   onNext,
+    at constructor (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:367:19)
+    at TypeScriptParserMixin.raise (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:6627:19)
+    at TypeScriptParserMixin.parseVar (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13391:16)
+    at TypeScriptParserMixin.parseVarStatement (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13230:10)
+    at TypeScriptParserMixin.parseVarStatement (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9493:31)
+    at TypeScriptParserMixin.parseStatementContent (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12851:23)
+    at TypeScriptParserMixin.parseStatementContent (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9527:18)
+    at TypeScriptParserMixin.parseStatementLike (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12767:17)
+    at TypeScriptParserMixin.parseModuleItem (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12744:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13316:36)
+    at TypeScriptParserMixin.parseBlockBody (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13309:10)
+    at TypeScriptParserMixin.parseProgram (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12625:10)
+    at TypeScriptParserMixin.parseTopLevel (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12615:25)
+    at TypeScriptParserMixin.parse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:14492:10)
+    at TypeScriptParserMixin.parse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10144:18)
+    at parse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:14526:38)
+    at parser (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/gensync/index.js:261:32)
+    at /Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/components/StudentReviewStep.tsx
+  Line 156:1:  Parsing error: ')' expected
+
+webpack compiled with 2 errors and 1 warning
+ERROR in src/components/StudentReviewStep.tsx:156:2
+TS1005: ')' expected.
+    154 |     </div>
+    155 |   );
+  > 156 | };
+        |  ^
+    157 |
+    158 | export default StudentReviewStep;
+
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/StudentReviewStep.tsx
+Syntax error: ')' expected (161:1)
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+ERROR in ./src/components/StudentReviewStep.tsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/marvinsanchez/projects/add-students/add-students-flow/src/components/StudentReviewStep.tsx: Missing initializer in const declaration. (21:81)
+
+  19 | }
+  20 |
+> 21 | const StudentReviewStep = forwardRef<StudentReviewStepRef, StudentReviewStepProps>(({
+     |                                                                                  ^
+  22 |   students,
+  23 |   onStudentsChange,
+  24 |   onNext,
+    at constructor (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:367:19)
+    at TypeScriptParserMixin.raise (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:6627:19)
+    at TypeScriptParserMixin.parseVar (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13391:16)
+    at TypeScriptParserMixin.parseVarStatement (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13230:10)
+    at TypeScriptParserMixin.parseVarStatement (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9493:31)
+    at TypeScriptParserMixin.parseStatementContent (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12851:23)
+    at TypeScriptParserMixin.parseStatementContent (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9527:18)
+    at TypeScriptParserMixin.parseStatementLike (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12767:17)
+    at TypeScriptParserMixin.parseModuleItem (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12744:17)
+    at TypeScriptParserMixin.parseBlockOrModuleBlockBody (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13316:36)
+    at TypeScriptParserMixin.parseBlockBody (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:13309:10)
+    at TypeScriptParserMixin.parseProgram (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12625:10)
+    at TypeScriptParserMixin.parseTopLevel (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12615:25)
+    at TypeScriptParserMixin.parse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:14492:10)
+    at TypeScriptParserMixin.parse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10144:18)
+    at parse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:14526:38)
+    at parser (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/transformation/normalize-file.js:64:37)
+    at normalizeFile.next (<anonymous>)
+    at run (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/transformation/index.js:22:50)
+    at run.next (<anonymous>)
+    at transform (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/core/lib/transform.js:22:33)
+    at transform.next (<anonymous>)
+    at step (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/gensync/index.js:261:32)
+    at /Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/gensync/index.js:223:11)
+
+ERROR in [eslint] 
+src/components/StudentReviewStep.tsx
+  Line 161:1:  Parsing error: ')' expected
+
+webpack compiled with 2 errors and 1 warning
+ERROR in src/components/StudentReviewStep.tsx:161:2
+TS1005: ')' expected.
+    159 |     </div>
+    160 |   );
+  > 161 | };
+        |  ^
+    162 |
+    163 | export default StudentReviewStep;
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/AddStudentsModal.tsx
+  Line 5:29:  'StudentReviewStepRef' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/AddStudentsModal.tsx
+  Line 5:29:  'StudentReviewStepRef' is defined but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/AddStudentsModal.tsx
+  Line 31:9:  'reviewStepRef' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/AddStudentsModal.tsx
+  Line 31:9:  'reviewStepRef' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 1:51:   'useRef' is defined but never used                                                                                                       @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 1:51:   'useRef' is defined but never used                                                                                                       @typescript-eslint/no-unused-vars
+  Line 101:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 138:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 178:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 30:9:   'containerRef' is assigned a value but never used                                                                                        @typescript-eslint/no-unused-vars
+  Line 31:9:   'downloadSectionRef' is assigned a value but never used                                                                                  @typescript-eslint/no-unused-vars
+  Line 32:9:   'activeItemRefs' is assigned a value but never used                                                                                      @typescript-eslint/no-unused-vars
+  Line 104:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 141:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 181:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 30:9:   'containerRef' is assigned a value but never used                                                                                        @typescript-eslint/no-unused-vars
+  Line 31:9:   'downloadSectionRef' is assigned a value but never used                                                                                  @typescript-eslint/no-unused-vars
+  Line 32:9:   'activeItemRefs' is assigned a value but never used                                                                                      @typescript-eslint/no-unused-vars
+  Line 104:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 141:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 181:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 44:9:   'scrollToActiveItem' is assigned a value but never used                                                                                  @typescript-eslint/no-unused-vars
+  Line 60:9:   'scrollToDownloadSection' is assigned a value but never used                                                                             @typescript-eslint/no-unused-vars
+  Line 129:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 166:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 206:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 44:9:   'scrollToActiveItem' is assigned a value but never used                                                                                  @typescript-eslint/no-unused-vars
+  Line 60:9:   'scrollToDownloadSection' is assigned a value but never used                                                                             @typescript-eslint/no-unused-vars
+  Line 129:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 166:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 206:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 60:9:   'scrollToDownloadSection' is assigned a value but never used                                                                             @typescript-eslint/no-unused-vars
+  Line 132:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 169:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 209:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 60:9:   'scrollToDownloadSection' is assigned a value but never used                                                                             @typescript-eslint/no-unused-vars
+  Line 132:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 169:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 209:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+Syntax error: Identifier expected (237:18)
+WARNING in [eslint] 
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+ERROR in ./src/components/AccountCreationStep.tsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/marvinsanchez/projects/add-students/add-students-flow/src/components/AccountCreationStep.tsx: Unexpected token (237:18)
+
+  235 |                   ref={el => activeItemRefs.current[index] = el}
+  236 |                   className="flex items-center justify-between p-3 border rounded-lg"
+> 237 |                   <div className="flex items-center space-x-3">
+      |                   ^
+  238 |                     {statusItem.status === 'pending' && <span className="text-lg">⏳</span>}
+  239 |                     {statusItem.status === 'creating' && <Loader2 className="h-5 w-5 animate-spin" />}
+  240 |                     {statusItem.status === 'completed' && <CheckCircle className="h-5 w-5 text-success" />}
+    at constructor (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:367:19)
+    at TypeScriptParserMixin.raise (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:6627:19)
+    at TypeScriptParserMixin.unexpected (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:6647:16)
+    at TypeScriptParserMixin.jsxParseIdentifier (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4599:12)
+    at TypeScriptParserMixin.jsxParseNamespacedName (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4606:23)
+    at TypeScriptParserMixin.jsxParseAttribute (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4682:22)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4697:28)
+    at TypeScriptParserMixin.jsxParseOpeningElementAfterName (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10062:18)
+    at TypeScriptParserMixin.jsxParseOpeningElementAt (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4692:17)
+    at TypeScriptParserMixin.jsxParseElementAt (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4716:33)
+    at TypeScriptParserMixin.jsxParseElement (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4779:17)
+    at TypeScriptParserMixin.parseExprAtom (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4789:19)
+    at TypeScriptParserMixin.parseExprSubscripts (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11076:23)
+    at TypeScriptParserMixin.parseUpdate (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11061:21)
+    at TypeScriptParserMixin.parseMaybeUnary (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11041:23)
+    at TypeScriptParserMixin.parseMaybeUnary (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9852:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10894:61)
+    at TypeScriptParserMixin.parseExprOps (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10899:23)
+    at TypeScriptParserMixin.parseMaybeConditional (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10876:23)
+    at TypeScriptParserMixin.parseMaybeAssign (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10826:21)
+    at /Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9790:39
+    at TypeScriptParserMixin.tryParse (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:6935:20)
+    at TypeScriptParserMixin.parseMaybeAssign (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9790:18)
+    at /Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10795:39
+    at TypeScriptParserMixin.allowInAnd (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12427:12)
+    at TypeScriptParserMixin.parseMaybeAssignAllowIn (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10795:17)
+    at TypeScriptParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12494:17)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11674:28)
+    at TypeScriptParserMixin.parseExprAtom (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11326:23)
+    at TypeScriptParserMixin.parseExprAtom (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4794:20)
+    at TypeScriptParserMixin.parseExprSubscripts (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11076:23)
+    at TypeScriptParserMixin.parseUpdate (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11061:21)
+    at TypeScriptParserMixin.parseMaybeUnary (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11041:23)
+    at TypeScriptParserMixin.parseMaybeUnary (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9852:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10894:61)
+    at TypeScriptParserMixin.parseExprOps (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10899:23)
+    at TypeScriptParserMixin.parseMaybeConditional (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10876:23)
+    at TypeScriptParserMixin.parseMaybeAssign (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10826:21)
+    at TypeScriptParserMixin.parseMaybeAssign (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9801:20)
+    at TypeScriptParserMixin.parseFunctionBody (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12094:24)
+    at TypeScriptParserMixin.parseArrowExpression (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:12076:10)
+    at TypeScriptParserMixin.parseParenAndDistinguishExpression (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11686:12)
+    at TypeScriptParserMixin.parseExprAtom (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11326:23)
+    at TypeScriptParserMixin.parseExprAtom (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:4794:20)
+    at TypeScriptParserMixin.parseExprSubscripts (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11076:23)
+    at TypeScriptParserMixin.parseUpdate (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11061:21)
+    at TypeScriptParserMixin.parseMaybeUnary (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:11041:23)
+    at TypeScriptParserMixin.parseMaybeUnary (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:9852:18)
+    at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10894:61)
+    at TypeScriptParserMixin.parseExprOps (/Users/marvinsanchez/projects/add-students/add-students-flow/node_modules/@babel/parser/lib/index.js:10899:23)
+
+ERROR in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 237:18:  Parsing error: Identifier expected
+
+webpack compiled with 2 errors and 1 warning
+ERROR in src/components/AccountCreationStep.tsx:233:17
+TS2657: JSX expressions must have one parent element.
+    231 |             <div className="space-y-4">
+    232 |               {creationStatuses.map((statusItem, index) => (
+  > 233 |                 <div 
+        |                 ^^^^^
+  > 234 |                   key={statusItem.student.id} 
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 235 |                   ref={el => activeItemRefs.current[index] = el}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 236 |                   className="flex items-center justify-between p-3 border rounded-lg"
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 237 |                   <div className="flex items-center space-x-3">
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 238 |                     {statusItem.status === 'pending' && <span className="text-lg">⏳</span>}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 239 |                     {statusItem.status === 'creating' && <Loader2 className="h-5 w-5 animate-spin" />}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 240 |                     {statusItem.status === 'completed' && <CheckCircle className="h-5 w-5 text-success" />}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 241 |                     {statusItem.status === 'error' && <XCircle className="h-5 w-5 text-red-600" />}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 242 |                     
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 243 |                     <div className="flex flex-col">
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 244 |                       <span className="font-medium text-foreground">
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 245 |                         {statusItem.student.firstName} {statusItem.student.lastInitial}.
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 246 |                       </span>
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 247 |                       <span className="text-sm text-muted-foreground">{getStatusText(statusItem.status)}</span>
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 248 |                       {statusItem.error && (
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 249 |                         <span className="text-sm text-red-600">{statusItem.error}</span>
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 250 |                       )}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 251 |                     </div>
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 252 |                   </div>
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^
+    253 |                   
+    254 |                   {statusItem.status === 'completed' && showPDFOptions && (
+    255 |                     <Button
+
+ERROR in src/components/AccountCreationStep.tsx:235:19
+TS2322: Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type 'Ref<HTMLDivElement> | undefined'.
+  Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type '(instance: HTMLDivElement | null) => void | (() => VoidOrUndefinedOnly)'.
+    Type 'HTMLDivElement | null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+      Type 'null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+    233 |                 <div 
+    234 |                   key={statusItem.student.id} 
+  > 235 |                   ref={el => activeItemRefs.current[index] = el}
+        |                   ^^^
+    236 |                   className="flex items-center justify-between p-3 border rounded-lg"
+    237 |                   <div className="flex items-center space-x-3">
+    238 |                     {statusItem.status === 'pending' && <span className="text-lg">⏳</span>}
+
+ERROR in src/components/AccountCreationStep.tsx:237:19
+TS1003: Identifier expected.
+    235 |                   ref={el => activeItemRefs.current[index] = el}
+    236 |                   className="flex items-center justify-between p-3 border rounded-lg"
+  > 237 |                   <div className="flex items-center space-x-3">
+        |                   ^
+    238 |                     {statusItem.status === 'pending' && <span className="text-lg">⏳</span>}
+    239 |                     {statusItem.status === 'creating' && <Loader2 className="h-5 w-5 animate-spin" />}
+    240 |                     {statusItem.status === 'completed' && <CheckCircle className="h-5 w-5 text-success" />}
+
+ERROR in src/components/AccountCreationStep.tsx:254:19
+TS1005: ')' expected.
+    252 |                   </div>
+    253 |                   
+  > 254 |                   {statusItem.status === 'completed' && showPDFOptions && (
+        |                   ^
+    255 |                     <Button
+    256 |                       variant="ghost"
+    257 |                       size="sm"
+
+ERROR in src/components/AccountCreationStep.tsx:254:20
+TS18004: No value exists in scope for the shorthand property 'statusItem'. Either declare one or provide an initializer.
+    252 |                   </div>
+    253 |                   
+  > 254 |                   {statusItem.status === 'completed' && showPDFOptions && (
+        |                    ^^^^^^^^^^
+    255 |                     <Button
+    256 |                       variant="ghost"
+    257 |                       size="sm"
+
+ERROR in src/components/AccountCreationStep.tsx:254:30
+TS1005: ',' expected.
+    252 |                   </div>
+    253 |                   
+  > 254 |                   {statusItem.status === 'completed' && showPDFOptions && (
+        |                              ^
+    255 |                     <Button
+    256 |                       variant="ghost"
+    257 |                       size="sm"
+
+ERROR in src/components/AccountCreationStep.tsx:258:66
+TS2304: Cannot find name 'statusItem'.
+    256 |                       variant="ghost"
+    257 |                       size="sm"
+  > 258 |                       onClick={() => handleDownloadIndividualPDF(statusItem.student)}
+        |                                                                  ^^^^^^^^^^
+    259 |                       title="Download PDF credentials"
+    260 |                     >
+    261 |                       <Download className="h-4 w-4" />
+
+ERROR in src/components/AccountCreationStep.tsx:265:19
+TS1005: ',' expected.
+    263 |                   )}
+    264 |                   
+  > 265 |                   {statusItem.status === 'error' && (
+        |                   ^
+    266 |                     <Button
+    267 |                       variant="ghost"
+    268 |                       size="sm"
+
+ERROR in src/components/AccountCreationStep.tsx:265:19
+TS2554: Expected 1-2 arguments, but got 3.
+    263 |                   )}
+    264 |                   
+  > 265 |                   {statusItem.status === 'error' && (
+        |                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 266 |                     <Button
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 267 |                       variant="ghost"
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 268 |                       size="sm"
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 269 |                       onClick={() => retryIndividualAccount(index)}
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 270 |                       title="Retry account creation"
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 271 |                       className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 272 |                     >
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 273 |                       <RotateCcw className="h-4 w-4" />
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 274 |                     </Button>
+        | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  > 275 |                   )}
+        | ^^^^^^^^^^^^^^^^^^^^^
+    276 |                 </div>
+    277 |               ))}
+    278 |             </div>
+
+ERROR in src/components/AccountCreationStep.tsx:265:20
+TS18004: No value exists in scope for the shorthand property 'statusItem'. Either declare one or provide an initializer.
+    263 |                   )}
+    264 |                   
+  > 265 |                   {statusItem.status === 'error' && (
+        |                    ^^^^^^^^^^
+    266 |                     <Button
+    267 |                       variant="ghost"
+    268 |                       size="sm"
+
+ERROR in src/components/AccountCreationStep.tsx:265:30
+TS1005: ',' expected.
+    263 |                   )}
+    264 |                   
+  > 265 |                   {statusItem.status === 'error' && (
+        |                              ^
+    266 |                     <Button
+    267 |                       variant="ghost"
+    268 |                       size="sm"
+
+ERROR in src/components/AccountCreationStep.tsx:269:61
+TS2304: Cannot find name 'index'.
+    267 |                       variant="ghost"
+    268 |                       size="sm"
+  > 269 |                       onClick={() => retryIndividualAccount(index)}
+        |                                                             ^^^^^
+    270 |                       title="Retry account creation"
+    271 |                       className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
+    272 |                     >
+
+ERROR in src/components/AccountCreationStep.tsx:276:17
+TS1005: ',' expected.
+    274 |                     </Button>
+    275 |                   )}
+  > 276 |                 </div>
+        |                 ^^
+    277 |               ))}
+    278 |             </div>
+    279 |           </CardContent>
+
+ERROR in src/components/AccountCreationStep.tsx:277:17
+TS1381: Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+    275 |                   )}
+    276 |                 </div>
+  > 277 |               ))}
+        |                 ^
+    278 |             </div>
+    279 |           </CardContent>
+    280 |         </Card>
+
+ERROR in src/components/AccountCreationStep.tsx:278:15
+TS17002: Expected corresponding JSX closing tag for 'CardContent'.
+    276 |                 </div>
+    277 |               ))}
+  > 278 |             </div>
+        |               ^^^
+    279 |           </CardContent>
+    280 |         </Card>
+    281 |       )}
+
+ERROR in src/components/AccountCreationStep.tsx:279:13
+TS17002: Expected corresponding JSX closing tag for 'Card'.
+    277 |               ))}
+    278 |             </div>
+  > 279 |           </CardContent>
+        |             ^^^^^^^^^^^
+    280 |         </Card>
+    281 |       )}
+    282 |
+
+ERROR in src/components/AccountCreationStep.tsx:280:9
+TS1005: ')' expected.
+    278 |             </div>
+    279 |           </CardContent>
+  > 280 |         </Card>
+        |         ^^
+    281 |       )}
+    282 |
+    283 |       {showPDFOptions && (
+
+ERROR in src/components/AccountCreationStep.tsx:280:11
+TS17002: Expected corresponding JSX closing tag for 'div'.
+    278 |             </div>
+    279 |           </CardContent>
+  > 280 |         </Card>
+        |           ^^^^
+    281 |       )}
+    282 |
+    283 |       {showPDFOptions && (
+
+ERROR in src/components/AccountCreationStep.tsx:283:8
+TS2304: Cannot find name 'showPDFOptions'.
+    281 |       )}
+    282 |
+  > 283 |       {showPDFOptions && (
+        |        ^^^^^^^^^^^^^^
+    284 |         <Card>
+    285 |           <CardHeader className="pb-3">
+    286 |             <CardTitle className="text-base">Download printable credentials</CardTitle>
+
+ERROR in src/components/AccountCreationStep.tsx:294:24
+TS2304: Cannot find name 'handleDownloadAllPDFs'.
+    292 |             
+    293 |             <Button
+  > 294 |               onClick={handleDownloadAllPDFs}
+        |                        ^^^^^^^^^^^^^^^^^^^^^
+    295 |               disabled={completedCount === 0}
+    296 |               className="w-full"
+    297 |             >
+
+ERROR in src/components/AccountCreationStep.tsx:295:25
+TS2304: Cannot find name 'completedCount'.
+    293 |             <Button
+    294 |               onClick={handleDownloadAllPDFs}
+  > 295 |               disabled={completedCount === 0}
+        |                         ^^^^^^^^^^^^^^
+    296 |               className="w-full"
+    297 |             >
+    298 |               <Download className="h-4 w-4 mr-2" />
+
+ERROR in src/components/AccountCreationStep.tsx:299:42
+TS2304: Cannot find name 'completedCount'.
+    297 |             >
+    298 |               <Download className="h-4 w-4 mr-2" />
+  > 299 |               Download all credentials ({completedCount} students)
+        |                                          ^^^^^^^^^^^^^^
+    300 |             </Button>
+    301 |
+    302 |           </CardContent>
+
+ERROR in src/components/AccountCreationStep.tsx:306:5
+TS1128: Declaration or statement expected.
+    304 |       )}
+    305 |
+  > 306 |     </div>
+        |     ^^
+    307 |   );
+    308 | };
+    309 |
+
+ERROR in src/components/AccountCreationStep.tsx:306:7
+TS2304: Cannot find name 'div'.
+    304 |       )}
+    305 |
+  > 306 |     </div>
+        |       ^^^
+    307 |   );
+    308 | };
+    309 |
+
+ERROR in src/components/AccountCreationStep.tsx:307:3
+TS1109: Expression expected.
+    305 |
+    306 |     </div>
+  > 307 |   );
+        |   ^
+    308 | };
+    309 |
+    310 | export default AccountCreationStep;
+
+ERROR in src/components/AccountCreationStep.tsx:308:1
+TS1128: Declaration or statement expected.
+    306 |     </div>
+    307 |   );
+  > 308 | };
+        | ^
+    309 |
+    310 | export default AccountCreationStep;
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/AccountCreationStep.tsx:235:19
+TS2322: Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type 'Ref<HTMLDivElement> | undefined'.
+  Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type '(instance: HTMLDivElement | null) => void | (() => VoidOrUndefinedOnly)'.
+    Type 'HTMLDivElement | null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+      Type 'null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+    233 |                 <div 
+    234 |                   key={statusItem.student.id} 
+  > 235 |                   ref={el => activeItemRefs.current[index] = el}
+        |                   ^^^
+    236 |                   className="flex items-center justify-between p-3 border rounded-lg"
+    237 |                 >
+    238 |                   <div className="flex items-center space-x-3">
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+ERROR in src/components/AccountCreationStep.tsx:235:19
+TS2322: Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type 'Ref<HTMLDivElement> | undefined'.
+  Type '(el: HTMLDivElement | null) => HTMLDivElement | null' is not assignable to type '(instance: HTMLDivElement | null) => void | (() => VoidOrUndefinedOnly)'.
+    Type 'HTMLDivElement | null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+      Type 'null' is not assignable to type 'void | (() => VoidOrUndefinedOnly)'.
+    233 |                 <div 
+    234 |                   key={statusItem.student.id} 
+  > 235 |                   ref={el => activeItemRefs.current[index] = el}
+        |                   ^^^
+    236 |                   className="flex items-center justify-between p-3 border rounded-lg"
+    237 |                 >
+    238 |                   <div className="flex items-center space-x-3">
+
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+WARNING in [eslint] 
+src/components/AccountCreationStep.tsx
+  Line 135:6:  React Hook useEffect has missing dependencies: 'createAccounts' and 'overallStatus'. Either include them or remove the dependency array  react-hooks/exhaustive-deps
+  Line 172:9:  'retryFailedAccounts' is assigned a value but never used                                                                                 @typescript-eslint/no-unused-vars
+  Line 212:9:  'hasErrors' is assigned a value but never used                                                                                           @typescript-eslint/no-unused-vars
+
+src/components/StudentReviewStep.tsx
+  Line 64:9:  The 'handleContinue' function makes the dependencies of useImperativeHandle Hook (at line 76) change on every render. Move it inside the useImperativeHandle callback. Alternatively, wrap the definition of 'handleContinue' in its own useCallback() Hook  react-hooks/exhaustive-deps
+
+src/components/ui/card.tsx
+  Line 37:3:  Headings must have content and the content must be accessible by a screen reader  jsx-a11y/heading-has-content
+
+webpack compiled with 1 warning
+No issues found.

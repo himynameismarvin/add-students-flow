@@ -14,11 +14,6 @@ const AccountTypeSelection: React.FC<AccountTypeSelectionProps> = ({
 }) => {
   return (
     <div className="flex flex-col h-full space-y-6 py-4">
-      <div className="space-y-2">
-        <p className="text-sm text-muted-foreground">
-          Choose how to add students to your class
-        </p>
-      </div>
 
       <div className="flex-1 flex flex-col space-y-4">
         <Card className="flex-1 hover:shadow-md transition-shadow cursor-pointer" onClick={onSelectCreateNew}>
@@ -29,7 +24,7 @@ const AccountTypeSelection: React.FC<AccountTypeSelectionProps> = ({
             <div className="space-y-2">
               <h3 className="text-lg font-semibold text-foreground">Create new accounts</h3>
               <p className="text-sm text-muted-foreground">
-                For students who don't have a Prodigy account yet
+                For students who don't have a Prodigy account
               </p>
             </div>
             <Button size="lg" className="mt-4">

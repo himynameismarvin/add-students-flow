@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { Student } from '../types/Student';
 import { generateAndDownloadStudentPDF, generateAndDownloadAllStudentsPDF } from '../utils/pdfGenerator';
 import { Button } from './ui/button';
@@ -27,6 +27,9 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
   const [creationStatuses, setCreationStatuses] = useState<StudentCreationStatus[]>([]);
   const [overallStatus, setOverallStatus] = useState<CreationStatus>('pending');
   const [showPDFOptions, setShowPDFOptions] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const downloadSectionRef = useRef<HTMLDivElement>(null);
+  const activeItemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const simulateAccountCreation = async (student: Student): Promise<void> => {
     // Simulate API call delay
@@ -35,6 +38,31 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
     // Simulate occasional errors (5% chance)
     if (Math.random() < 0.05) {
       throw new Error('Account creation failed');
+    }
+  };
+
+  const scrollToActiveItem = (index: number) => {
+    const activeItem = activeItemRefs.current[index];
+    if (activeItem && containerRef.current) {
+      const container = containerRef.current;
+      const itemTop = activeItem.offsetTop;
+      const itemHeight = activeItem.offsetHeight;
+      const containerHeight = container.clientHeight;
+      const scrollTop = itemTop - (containerHeight / 2) + (itemHeight / 2);
+      
+      container.scrollTo({
+        top: scrollTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollToDownloadSection = () => {
+    if (downloadSectionRef.current && containerRef.current) {
+      downloadSectionRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
@@ -54,6 +82,9 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
             : status
         )
       );
+      
+      // Scroll to active item
+      setTimeout(() => scrollToActiveItem(i), 100);
       
       try {
         await simulateAccountCreation(student);
@@ -84,6 +115,9 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
     
     setOverallStatus('completed');
     setShowPDFOptions(true);
+    
+    // Scroll to download section after completion
+    setTimeout(() => scrollToDownloadSection(), 500);
   }, [students, overallStatus]);
 
   useEffect(() => {
@@ -178,7 +212,7 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
   const hasErrors = errorCount > 0;
 
   return (
-    <div className="flex flex-col h-full space-y-6 py-4">
+    <div ref={containerRef} className="flex flex-col h-full space-y-6 py-4 overflow-auto">
       <div className="space-y-2">
         {overallStatus === 'creating' && (
           <p className="text-sm text-muted-foreground">Creating accounts for {students.length} students... Please wait.</p>
@@ -196,7 +230,11 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
           <CardContent className="p-6">
             <div className="space-y-4">
               {creationStatuses.map((statusItem, index) => (
-                <div key={statusItem.student.id} className="flex items-center justify-between p-3 border rounded-lg">
+                <div 
+                  key={statusItem.student.id} 
+                  ref={el => { activeItemRefs.current[index] = el; }}
+                  className="flex items-center justify-between p-3 border rounded-lg"
+                >
                   <div className="flex items-center space-x-3">
                     {statusItem.status === 'pending' && <span className="text-lg">⏳</span>}
                     {statusItem.status === 'creating' && <Loader2 className="h-5 w-5 animate-spin" />}
@@ -244,7 +282,7 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
       )}
 
       {showPDFOptions && (
-        <Card>
+        <Card ref={downloadSectionRef}>
           <CardHeader className="pb-3">
             <CardTitle className="text-base">Download printable credentials</CardTitle>
           </CardHeader>

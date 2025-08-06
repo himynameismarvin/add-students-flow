@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import { Student, ModalStep } from '../types/Student';
 import AccountTypeSelection from './AccountTypeSelection';
 import StudentInputStep, { StudentInputStepRef } from './StudentInputStep';
-import StudentReviewStep from './StudentReviewStep';
+import StudentReviewStep, { StudentReviewStepRef } from './StudentReviewStep';
 import AccountCreationStep from './AccountCreationStep';
 import LinkExistingAccounts from './LinkExistingAccounts';
 import {
@@ -28,6 +28,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [inputStepLoading, setInputStepLoading] = useState(false);
   const inputStepRef = useRef<StudentInputStepRef>(null);
+  const reviewStepRef = useRef<StudentReviewStepRef>(null);
 
   const handleNext = (stepData?: any) => {
     switch (currentStep) {
@@ -116,6 +117,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
       case 'review':
         return (
           <StudentReviewStep
+            ref={reviewStepRef}
             students={students}
             onStudentsChange={setStudents}
             onNext={handleNext}
@@ -186,7 +188,9 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
               ← Back to input
             </Button>
             <Button
-              onClick={handleNext}
+              onClick={() => {
+                reviewStepRef.current?.handleContinue();
+              }}
               disabled={students.length === 0}
             >
               Create account{students.length !== 1 ? 's' : ''} →
@@ -225,7 +229,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
       <DialogContent className="w-[800px] max-w-[90vw] max-h-[90vh] overflow-hidden flex flex-col p-0">
         {/* Fixed Header */}
         <div className="flex-shrink-0">
-          <DialogHeader className="px-6 pt-6 pb-2">
+          <DialogHeader className="px-6 pt-6 pb-4">
             <DialogTitle>{getStepTitle()}</DialogTitle>
           </DialogHeader>
           

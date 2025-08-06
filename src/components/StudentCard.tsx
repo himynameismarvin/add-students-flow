@@ -4,7 +4,7 @@ import { generatePassword } from '../utils/passwordGenerator';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { TableRow, TableCell } from './ui/table';
-import { Dices, Trash2, Lock } from 'lucide-react';
+import { Dices, Trash2 } from 'lucide-react';
 
 interface StudentCardProps {
   student: Student;
@@ -102,20 +102,6 @@ const StudentCard: React.FC<StudentCardProps> = ({ student, onUpdate, onRemove, 
           >
             <Dices className="h-3 w-3" />
           </Button>
-        </div>
-      </TableCell>
-      
-      <TableCell>
-        <div className="relative">
-          <Input
-            type="text"
-            value={student.username || ''}
-            className="border p-2 pr-8 focus:ring-1 focus:ring-ring bg-muted cursor-not-allowed"
-            style={{ borderColor: '#959594' }}
-            disabled
-            readOnly
-          />
-          <Lock className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         </div>
       </TableCell>
       

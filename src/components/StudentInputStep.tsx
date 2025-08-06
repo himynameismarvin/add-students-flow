@@ -131,7 +131,7 @@ const StudentInputStep = forwardRef<StudentInputStepRef, StudentInputStepProps>(
       <div className="space-y-4">
         <div>
           <p className="text-sm text-muted-foreground mt-2">
-         Our AI can parse student names from ANY format - class rosters, email lists, tables, or mixed text. Just paste it in!
+         Paste or type student names in any format. You'll be able to review and edit what we come up with.
           </p>
         </div>
         
@@ -145,15 +145,13 @@ const StudentInputStep = forwardRef<StudentInputStepRef, StudentInputStepProps>(
               id="student-text"
               value={inputText}
               onChange={(e) => handleInputTextChange(e.target.value)}
-              placeholder="Paste your student list in any format - our AI will figure it out!
-
-Examples:
+              placeholder="Examples:
 • John Smith, Jane Doe, Alex Johnson
 • From class roster tables
 • Email lists with names
 • Mixed text with student names
 • Any format you have!"
-              className="min-h-[300px] resize-none"
+              className="min-h-[220px] resize-none"
             />
             
             {parseErrors.length > 0 && (
@@ -170,9 +168,15 @@ Examples:
             )}
           </div>
 
+          {/* OR Divider */}
+          <div className="relative flex items-center justify-center">
+            <div className="w-full border-t border-gray-300 my-2"></div>
+            <span className="absolute bg-white px-3 text-sm text-gray-500 font-medium">OR</span>
+          </div>
+
           {/* Drag and Drop File Upload Zone */}
           <div 
-            className={`relative w-full border-2 border-dashed rounded-lg px-4 py-3 text-center transition-colors cursor-pointer max-h-[100px] bg-gray-50 hover:bg-[#E5EBEB]/30`}
+            className={`relative w-full border-2 border-dashed rounded-lg px-4 py-4 text-center transition-colors cursor-pointer min-h-[120px] bg-gray-50 hover:bg-[#E5EBEB]/30 flex items-center justify-center`}
             style={{
               borderColor: '#7C9898',
               backgroundColor: isDragActive ? '#E5EBEB' : undefined
@@ -182,12 +186,12 @@ Examples:
             onDragOver={handleDragOver}
             onDrop={handleDrop}
           >
-            <div className="flex items-center justify-center space-x-4">
+            <div className="flex items-center justify-center space-x-3">
               <div className="flex-shrink-0">
                 <div className="relative">
-                  <FileSpreadsheet className="h-8 w-8 text-gray-400" />
+                  <FileSpreadsheet className="h-12 w-12 text-gray-400" />
                   <div className="absolute -top-1 -right-1 bg-blue-600 rounded-full p-0.5">
-                    <Upload className="h-2 w-2 text-white" />
+                    <Upload className="h-3 w-3 text-white" />
                   </div>
                 </div>
               </div>
