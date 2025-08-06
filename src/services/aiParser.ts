@@ -1,6 +1,7 @@
 import OpenAI from 'openai';
 import { Student, ParsedStudentData } from '../types/Student';
 import { generatePassword, generateUniqueId } from '../utils/passwordGenerator';
+import { generateUsername } from '../utils/usernameGenerator';
 
 // Initialize OpenAI client with GitHub Models API
 const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
@@ -95,12 +96,17 @@ Rules:
     }
 
     // Convert AI response to our format
-    const students: Student[] = aiResponse.students.map(student => ({
-      id: generateUniqueId(),
-      firstName: student.firstName.trim(),
-      lastInitial: student.lastName.trim().charAt(0).toUpperCase(),
-      password: generatePassword()
-    }));
+    const students: Student[] = aiResponse.students.map(student => {
+      const firstName = student.firstName.trim();
+      const lastInitial = student.lastName.trim().charAt(0).toUpperCase();
+      return {
+        id: generateUniqueId(),
+        firstName,
+        lastInitial,
+        password: generatePassword(),
+        username: generateUsername(firstName, lastInitial)
+      };
+    });
 
     return {
       students,
@@ -159,11 +165,14 @@ const fallbackParsing = (text: string): ParsedStudentData => {
     }
 
     if (firstName) {
+      const formattedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase();
+      const formattedLastInitial = lastName.charAt(0).toUpperCase();
       students.push({
         id: generateUniqueId(),
-        firstName: firstName.charAt(0).toUpperCase() + firstName.slice(1).toLowerCase(),
-        lastInitial: lastName.charAt(0).toUpperCase(),
-        password: generatePassword()
+        firstName: formattedFirstName,
+        lastInitial: formattedLastInitial,
+        password: generatePassword(),
+        username: generateUsername(formattedFirstName, formattedLastInitial)
       });
     }
   });

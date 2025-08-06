@@ -178,7 +178,7 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
   const hasErrors = errorCount > 0;
 
   return (
-    <div className="flex flex-col h-full space-y-6">
+    <div className="flex flex-col h-full space-y-6 py-4">
       <div className="space-y-2">
         {overallStatus === 'creating' && (
           <p className="text-sm text-muted-foreground">Creating accounts for {students.length} students... Please wait.</p>
@@ -266,37 +266,6 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
         </Card>
       )}
 
-      <div className="-mx-6 border-t">
-        <div className="flex justify-between pt-4 px-6">
-          {overallStatus === 'creating' && (
-            <div className="flex items-center space-x-2 mx-auto">
-              <Loader2 className="h-4 w-4 animate-spin" />
-              <span className="text-sm text-muted-foreground">Creating accounts...</span>
-            </div>
-          )}
-          
-          {overallStatus === 'completed' && (
-            <>
-              {hasErrors ? (
-                <>
-                  <Button variant="outline" onClick={retryFailedAccounts}>
-                    🔄 Retry failed ({errorCount})
-                  </Button>
-                  <Button onClick={onClose}>
-                    Close (some failed)
-                  </Button>
-                </>
-              ) : (
-                <div className="flex justify-end w-full">
-                  <Button onClick={onClose}>
-                    Done
-                  </Button>
-                </div>
-              )}
-            </>
-          )}
-        </div>
-      </div>
     </div>
   );
 };

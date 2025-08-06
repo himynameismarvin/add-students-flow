@@ -1,20 +1,27 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useImperativeHandle, forwardRef } from 'react';
 // import { parseStudentText, parseCSV } from '../utils/studentParser';
 import { parseStudentDataWithAI } from '../services/aiParser';
 import { Student } from '../types/Student';
-import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Card, CardContent } from './ui/card';
-import { Upload, Loader2, FileSpreadsheet } from 'lucide-react';
+import { Upload, FileSpreadsheet } from 'lucide-react';
 
 interface StudentInputStepProps {
   onNext: (data: { students: Student[] }) => void;
+  onBack: () => void;
   onClose: () => void;
   onInputChange?: (hasInput: boolean) => void;
+  onFileUpload?: (hasFile: boolean) => void;
+  onLoadingChange?: (isLoading: boolean) => void;
 }
 
-const StudentInputStep: React.FC<StudentInputStepProps> = ({ onNext, onClose, onInputChange }) => {
+export interface StudentInputStepRef {
+  handleTextParse: () => void;
+  isLoading: boolean;
+}
+
+const StudentInputStep = forwardRef<StudentInputStepRef, StudentInputStepProps>(({ onNext, onBack, onClose, onInputChange, onFileUpload, onLoadingChange }, ref) => {
   const [inputText, setInputText] = useState('');
   const [parseErrors, setParseErrors] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -25,10 +32,11 @@ const StudentInputStep: React.FC<StudentInputStepProps> = ({ onNext, onClose, on
     onInputChange?.(value.trim().length > 0);
   };
 
-  const handleTextParse = async () => {
+  const handleTextParse = useCallback(async () => {
     if (!inputText.trim()) return;
     
     setIsLoading(true);
+    onLoadingChange?.(true);
     setParseErrors([]);
     
     try {
@@ -45,14 +53,17 @@ const StudentInputStep: React.FC<StudentInputStepProps> = ({ onNext, onClose, on
       setParseErrors(['AI parsing failed. Please check your API key or try again.']);
     } finally {
       setIsLoading(false);
+      onLoadingChange?.(false);
     }
-  };
+  }, [inputText, onNext, onLoadingChange]);
 
 
   const handleFileUpload = async (file: File) => {
     if (!file) return;
     
+    onFileUpload?.(true);
     setIsLoading(true);
+    onLoadingChange?.(true);
     setParseErrors([]);
     const reader = new FileReader();
     
@@ -74,6 +85,7 @@ const StudentInputStep: React.FC<StudentInputStepProps> = ({ onNext, onClose, on
         setParseErrors(['AI parsing failed. Please check your API key or try again.']);
       } finally {
         setIsLoading(false);
+        onLoadingChange?.(false);
       }
     };
     
@@ -108,9 +120,14 @@ const StudentInputStep: React.FC<StudentInputStepProps> = ({ onNext, onClose, on
     }
   };
 
+  // Expose methods to parent using useImperativeHandle
+  useImperativeHandle(ref, () => ({
+    handleTextParse,
+    isLoading
+  }), [handleTextParse, isLoading]);
 
   return (
-    <div className="flex flex-col h-full space-y-6">
+    <div className="flex flex-col h-full space-y-6 py-4">
       <div className="space-y-4">
         <div>
           <p className="text-sm text-muted-foreground mt-2">
@@ -155,11 +172,11 @@ Examples:
 
           {/* Drag and Drop File Upload Zone */}
           <div 
-            className={`relative w-full border-2 border-dashed rounded-lg px-4 py-3 text-center transition-colors cursor-pointer max-h-[100px] ${
-              isDragActive 
-                ? 'border-[#245353] bg-[#E5EBEB]/50' 
-                : 'border-gray-300 bg-gray-50 hover:border-[#245353] hover:bg-[#E5EBEB]/30'
-            }`}
+            className={`relative w-full border-2 border-dashed rounded-lg px-4 py-3 text-center transition-colors cursor-pointer max-h-[100px] bg-gray-50 hover:bg-[#E5EBEB]/30`}
+            style={{
+              borderColor: '#7C9898',
+              backgroundColor: isDragActive ? '#E5EBEB' : undefined
+            }}
             onDragEnter={handleDragEnter}
             onDragLeave={handleDragLeave}
             onDragOver={handleDragOver}
@@ -183,14 +200,14 @@ Examples:
                   </span>
                 </p>
                 <p className="text-xs text-gray-500 mt-1">
-                  .pdf, .csv, .docx, .txt, 
+                  .pdf, .csv, .docx, .txt 
                 </p>
               </div>
             </div>
             
             <input
               type="file"
-              accept=".csv,.pdf,.txt,.docx,.xlsx,text/*"
+              accept=".csv,.pdf,.txt,.docx,text/*"
               onChange={(e) => e.target.files?.[0] && handleFileUpload(e.target.files[0])}
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
             />
@@ -198,28 +215,10 @@ Examples:
         </div>
       </div>
 
-      <div className="-mx-6 border-t">
-        <div className="flex justify-between pt-4 px-6">
-          <Button variant="outline" onClick={onClose}>
-            Cancel
-          </Button>
-          <Button
-            onClick={handleTextParse}
-            disabled={!inputText.trim() || isLoading}
-          >
-            {isLoading ? (
-              <>
-                <Loader2 className="h-4 w-4 animate-spin mr-2" />
-                Processing...
-              </>
-            ) : (
-              'Continue'
-            )}
-          </Button>
-        </div>
-      </div>
     </div>
   );
-};
+});
+
+StudentInputStep.displayName = 'StudentInputStep';
 
 export default StudentInputStep;

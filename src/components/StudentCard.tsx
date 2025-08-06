@@ -4,7 +4,7 @@ import { generatePassword } from '../utils/passwordGenerator';
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { TableRow, TableCell } from './ui/table';
-import { Dices, Trash2 } from 'lucide-react';
+import { Dices, Trash2, Lock } from 'lucide-react';
 
 interface StudentCardProps {
   student: Student;
@@ -62,8 +62,9 @@ const StudentCard: React.FC<StudentCardProps> = ({ student, onUpdate, onRemove, 
           value={student.firstName}
           onChange={(e) => handleFirstNameChange(e.target.value)}
           className={`border p-2 focus:ring-1 focus:ring-ring ${
-            isFirstNameInvalid ? 'border-red-500' : 'border-input'
+            isFirstNameInvalid ? 'border-red-500' : ''
           }`}
+          style={{ borderColor: isFirstNameInvalid ? '#ef4444' : '#959594' }}
         />
       </TableCell>
       
@@ -73,8 +74,9 @@ const StudentCard: React.FC<StudentCardProps> = ({ student, onUpdate, onRemove, 
           value={student.lastInitial}
           onChange={(e) => handleLastInitialChange(e.target.value)}
           className={`border p-2 focus:ring-1 focus:ring-ring text-center w-12 mx-auto ${
-            isLastInitialInvalid ? 'border-red-500' : 'border-input'
+            isLastInitialInvalid ? 'border-red-500' : ''
           }`}
+          style={{ borderColor: isLastInitialInvalid ? '#ef4444' : '#959594' }}
           maxLength={1}
         />
       </TableCell>
@@ -86,8 +88,9 @@ const StudentCard: React.FC<StudentCardProps> = ({ student, onUpdate, onRemove, 
             value={student.password}
             onChange={(e) => handlePasswordChange(e.target.value)}
             className={`border p-2 pr-10 focus:ring-1 focus:ring-ring ${
-              isPasswordInvalid ? 'border-red-500' : 'border-input'
+              isPasswordInvalid ? 'border-red-500' : ''
             }`}
+            style={{ borderColor: isPasswordInvalid ? '#ef4444' : '#959594' }}
           />
           <Button
             type="button"
@@ -99,6 +102,20 @@ const StudentCard: React.FC<StudentCardProps> = ({ student, onUpdate, onRemove, 
           >
             <Dices className="h-3 w-3" />
           </Button>
+        </div>
+      </TableCell>
+      
+      <TableCell>
+        <div className="relative">
+          <Input
+            type="text"
+            value={student.username || ''}
+            className="border p-2 pr-8 focus:ring-1 focus:ring-ring bg-muted cursor-not-allowed"
+            style={{ borderColor: '#959594' }}
+            disabled
+            readOnly
+          />
+          <Lock className="absolute right-2 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         </div>
       </TableCell>
       

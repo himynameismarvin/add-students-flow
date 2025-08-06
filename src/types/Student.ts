@@ -3,6 +3,7 @@ export interface Student {
   firstName: string;
   lastInitial: string;
   password: string;
+  username?: string;
   isExisting?: boolean;
 }
 
