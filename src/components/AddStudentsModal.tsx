@@ -27,6 +27,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
   const [hasUploadedFile, setHasUploadedFile] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [inputStepLoading, setInputStepLoading] = useState(false);
+  const [creationCompleted, setCreationCompleted] = useState(false);
   const inputStepRef = useRef<StudentInputStepRef>(null);
   const reviewStepRef = useRef<StudentReviewStepRef>(null);
 
@@ -78,6 +79,11 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
       return false;
     }
     
+    // Don't show confirmation if creation is completed
+    if (currentStep === 'creation' && creationCompleted) {
+      return false;
+    }
+    
     return hasInputText || hasUploadedFile || currentStep === 'review' || currentStep === 'creation';
   };
 
@@ -95,6 +101,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
     setHasInputText(false);
     setHasUploadedFile(false);
     setShowConfirmation(false);
+    setCreationCompleted(false);
     onClose();
   };
 
@@ -130,6 +137,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
             students={students}
             onBack={handleBack}
             onClose={handleForceClose}
+            onStatusChange={setCreationCompleted}
           />
         );
       case 'linkExisting':
@@ -235,62 +243,79 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
           
           {/* Progress Steps - only show for create new accounts flow */}
           {(currentStep === 'input' || currentStep === 'review' || currentStep === 'creation') && (
-            <div className="flex justify-center items-center space-x-8 py-4 border-t border-b" style={{backgroundColor: '#FBFBFB', borderColor: '#EBEAE8'}}>
-              <div className="flex items-center space-x-2">
-                <div className={cn(
-                  "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium",
-                  currentStep === 'input' ? 'bg-primary text-primary-foreground' : 
-                  (currentStep === 'review' || currentStep === 'creation') ? 'bg-success text-success-foreground' : 
-                  'text-muted-foreground'
-                )} style={currentStep !== 'input' && currentStep !== 'review' && currentStep !== 'creation' ? {backgroundColor: '#EBEAE8'} : {}}>
-                  {(currentStep === 'review' || currentStep === 'creation') ? (
-                    <Check className="h-4 w-4" />
-                  ) : (
-                    '1'
-                  )}
+            <div className="flex justify-center items-center py-4 border-t border-b" style={{backgroundColor: '#FBFBFB', borderColor: '#EBEAE8'}}>
+              <div className="flex items-center">
+                {/* Step 1 */}
+                <div className="flex items-center space-x-2">
+                  <div className={cn(
+                    "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium",
+                    currentStep === 'input' ? 'bg-primary text-primary-foreground' : 
+                    (currentStep === 'review' || currentStep === 'creation') ? 'bg-success text-success-foreground' : 
+                    'text-muted-foreground'
+                  )} style={currentStep !== 'input' && currentStep !== 'review' && currentStep !== 'creation' ? {backgroundColor: '#EBEAE8'} : {}}>
+                    {(currentStep === 'review' || currentStep === 'creation') ? (
+                      <Check className="h-4 w-4" />
+                    ) : (
+                      '1'
+                    )}
+                  </div>
+                  <span className={cn(
+                    "text-sm font-medium",
+                    currentStep === 'input' ? 'text-primary' : 'text-muted-foreground'
+                  )}>
+                    Input
+                  </span>
                 </div>
-                <span className={cn(
-                  "text-sm font-medium",
-                  currentStep === 'input' ? 'text-primary' : 'text-muted-foreground'
-                )}>
-                  Input
-                </span>
-              </div>
-              
-              <div className="flex items-center space-x-2">
-                <div className={cn(
-                  "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium",
-                  currentStep === 'review' ? 'bg-primary text-primary-foreground' :
-                  currentStep === 'creation' ? 'bg-success text-success-foreground' :
-                  'text-muted-foreground'
-                )} style={currentStep !== 'review' && currentStep !== 'creation' ? {backgroundColor: '#EBEAE8'} : {}}>
-                  {currentStep === 'creation' ? (
-                    <Check className="h-4 w-4" />
-                  ) : (
-                    '2'
-                  )}
+                
+                {/* Line 1 */}
+                <div className="w-16 h-px mx-4 bg-gray-300"></div>
+                
+                {/* Step 2 */}
+                <div className="flex items-center space-x-2">
+                  <div className={cn(
+                    "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium",
+                    currentStep === 'review' ? 'bg-primary text-primary-foreground' :
+                    currentStep === 'creation' ? 'bg-success text-success-foreground' :
+                    'text-muted-foreground'
+                  )} style={currentStep !== 'review' && currentStep !== 'creation' ? {backgroundColor: '#EBEAE8'} : {}}>
+                    {currentStep === 'creation' ? (
+                      <Check className="h-4 w-4" />
+                    ) : (
+                      '2'
+                    )}
+                  </div>
+                  <span className={cn(
+                    "text-sm font-medium",
+                    currentStep === 'review' ? 'text-primary' : 'text-muted-foreground'
+                  )}>
+                    Review
+                  </span>
                 </div>
-                <span className={cn(
-                  "text-sm font-medium",
-                  currentStep === 'review' ? 'text-primary' : 'text-muted-foreground'
-                )}>
-                  Review
-                </span>
-              </div>
-              
-              <div className="flex items-center space-x-2">
-                <div className={cn(
-                  "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium",
-                  currentStep === 'creation' ? 'bg-primary text-primary-foreground' : 'text-muted-foreground'
-                )} style={currentStep !== 'creation' ? {backgroundColor: '#EBEAE8'} : {}}>
-                  3
+                
+                {/* Line 2 */}
+                <div className="w-16 h-px mx-2 bg-gray-300"></div>
+                
+                {/* Step 3 */}
+                <div className="flex items-center space-x-2">
+                  <div className={cn(
+                    "w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium",
+                    currentStep === 'creation' && !creationCompleted ? 'bg-primary text-primary-foreground' :
+                    creationCompleted ? 'bg-success text-success-foreground' :
+                    'text-muted-foreground'
+                  )} style={currentStep !== 'creation' && !creationCompleted ? {backgroundColor: '#EBEAE8'} : {}}>
+                    {creationCompleted ? (
+                      <Check className="h-4 w-4" />
+                    ) : (
+                      '3'
+                    )}
+                  </div>
+                  <span className={cn(
+                    "text-sm font-medium",
+                    currentStep === 'creation' ? 'text-primary' : 'text-muted-foreground'
+                  )}>
+                    Create
+                  </span>
                 </div>
-                <span className={cn(
-                  "text-sm font-medium",
-                  currentStep === 'creation' ? 'text-primary' : 'text-muted-foreground'
-                )}>
-                  Create
-                </span>
               </div>
             </div>
           )}

@@ -9,6 +9,7 @@ interface AccountCreationStepProps {
   students: Student[];
   onBack: () => void;
   onClose: () => void;
+  onStatusChange?: (isCompleted: boolean) => void;
 }
 
 type CreationStatus = 'pending' | 'creating' | 'completed' | 'error';
@@ -22,14 +23,13 @@ interface StudentCreationStatus {
 const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
   students,
   onBack,
-  onClose
+  onClose,
+  onStatusChange
 }) => {
   const [creationStatuses, setCreationStatuses] = useState<StudentCreationStatus[]>([]);
   const [overallStatus, setOverallStatus] = useState<CreationStatus>('pending');
   const [showPDFOptions, setShowPDFOptions] = useState(false);
-  const containerRef = useRef<HTMLDivElement>(null);
   const downloadSectionRef = useRef<HTMLDivElement>(null);
-  const activeItemRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const simulateAccountCreation = async (student: Student): Promise<void> => {
     // Simulate API call delay
@@ -41,30 +41,6 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
     }
   };
 
-  const scrollToActiveItem = (index: number) => {
-    const activeItem = activeItemRefs.current[index];
-    if (activeItem && containerRef.current) {
-      const container = containerRef.current;
-      const itemTop = activeItem.offsetTop;
-      const itemHeight = activeItem.offsetHeight;
-      const containerHeight = container.clientHeight;
-      const scrollTop = itemTop - (containerHeight / 2) + (itemHeight / 2);
-      
-      container.scrollTo({
-        top: scrollTop,
-        behavior: 'smooth'
-      });
-    }
-  };
-
-  const scrollToDownloadSection = () => {
-    if (downloadSectionRef.current && containerRef.current) {
-      downloadSectionRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }
-  };
 
   const createAccounts = useCallback(async () => {
     if (overallStatus !== 'pending') return; // Prevent multiple runs
@@ -83,42 +59,48 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
         )
       );
       
-      // Scroll to active item
-      setTimeout(() => scrollToActiveItem(i), 100);
+      let attemptCount = 0;
+      let success = false;
       
-      try {
-        await simulateAccountCreation(student);
-        
-        // Update status to completed
-        setCreationStatuses(prev => 
-          prev.map((status, index) => 
-            index === i 
-              ? { ...status, status: 'completed' as CreationStatus }
-              : status
-          )
-        );
-      } catch (error) {
-        // Update status to error
-        setCreationStatuses(prev => 
-          prev.map((status, index) => 
-            index === i 
-              ? { 
-                  ...status, 
-                  status: 'error' as CreationStatus,
-                  error: error instanceof Error ? error.message : 'Unknown error'
-                }
-              : status
-          )
-        );
+      while (attemptCount < 2 && !success) {
+        try {
+          await simulateAccountCreation(student);
+          success = true;
+          
+          // Update status to completed
+          setCreationStatuses(prev => 
+            prev.map((status, index) => 
+              index === i 
+                ? { ...status, status: 'completed' as CreationStatus }
+                : status
+            )
+          );
+        } catch (error) {
+          attemptCount++;
+          
+          if (attemptCount >= 2) {
+            // Final failure after retry
+            setCreationStatuses(prev => 
+              prev.map((status, index) => 
+                index === i 
+                  ? { 
+                      ...status, 
+                      status: 'error' as CreationStatus,
+                      error: error instanceof Error ? error.message : 'Unknown error'
+                    }
+                  : status
+              )
+            );
+          }
+          // If first attempt failed, continue to retry automatically
+        }
       }
     }
     
     setOverallStatus('completed');
     setShowPDFOptions(true);
-    
-    // Scroll to download section after completion
-    setTimeout(() => scrollToDownloadSection(), 500);
-  }, [students, overallStatus]);
+    onStatusChange?.(true);
+  }, [students, overallStatus, onStatusChange]);
 
   useEffect(() => {
     // Initialize statuses
@@ -211,98 +193,82 @@ const AccountCreationStep: React.FC<AccountCreationStepProps> = ({
   const errorCount = creationStatuses.filter(s => s.status === 'error').length;
   const hasErrors = errorCount > 0;
 
+  const progressPercentage = students.length > 0 ? Math.round((completedCount / students.length) * 100) : 0;
+
   return (
-    <div ref={containerRef} className="flex flex-col h-full space-y-6 py-4 overflow-auto">
-      <div className="space-y-2">
-        {overallStatus === 'creating' && (
-          <p className="text-sm text-muted-foreground">Creating accounts for {students.length} students... Please wait.</p>
+    <div className="flex flex-col h-full space-y-6 py-4">
+      {/* Progress Summary */}
+      <div className="space-y-4">
+        <div className="text-center space-y-2">
+          <h3 className="text-lg font-medium text-foreground">
+            {overallStatus === 'creating' && `Creating ${students.length} student accounts...`}
+            {overallStatus === 'completed' && `${completedCount} student accounts created successfully`}
+            {overallStatus === 'pending' && `Ready to create ${students.length} student accounts`}
+          </h3>
+          {overallStatus === 'creating' && (
+            <p className="text-sm text-muted-foreground">
+              {completedCount} of {students.length} accounts created
+            </p>
+          )}
+        </div>
+        
+        {/* Progress Bar */}
+        {(overallStatus === 'creating' || overallStatus === 'completed') && (
+          <div className="w-full bg-gray-200 rounded-full h-3">
+            <div 
+              className="bg-success h-3 rounded-full transition-all duration-300 ease-out"
+              style={{ width: `${progressPercentage}%` }}
+            ></div>
+          </div>
         )}
-        {overallStatus === 'completed' && (
-          <p className="text-sm text-muted-foreground">
-            {completedCount} student accounts created
-          </p>
+        
+        {/* Retry Button for Failed Accounts */}
+        {hasErrors && overallStatus === 'completed' && (
+          <div className="flex justify-center">
+            <Button
+              variant="outline"
+              onClick={retryFailedAccounts}
+              className="text-blue-600 border-blue-600 hover:bg-blue-50"
+            >
+              <RotateCcw className="h-4 w-4 mr-2" />
+              Retry failed accounts ({errorCount})
+            </Button>
+          </div>
         )}
       </div>
 
+      {/* Download Section - Always visible but button disabled until complete */}
+      <Card ref={downloadSectionRef}>
+        <CardHeader className="pb-3">
+          <CardTitle className="text-base">Download printable login credentials</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-4">
+          <p className="text-sm text-muted-foreground">
+            Print and place in student agendas so they can play at home too!
+          </p>
+          
+          <Button
+            onClick={handleDownloadAllPDFs}
+            disabled={overallStatus !== 'completed' || completedCount === 0}
+            className="w-full"
+          >
+            <Download className="h-4 w-4 mr-2" />
+            {overallStatus === 'completed' 
+              ? `Download all credentials (${completedCount} students)`
+              : 'Download will be available soon'
+            }
+          </Button>
 
-      {(overallStatus === 'creating' || overallStatus === 'completed') && (
-        <Card className="flex-1">
-          <CardContent className="p-6">
-            <div className="space-y-4">
-              {creationStatuses.map((statusItem, index) => (
-                <div 
-                  key={statusItem.student.id} 
-                  ref={el => { activeItemRefs.current[index] = el; }}
-                  className="flex items-center justify-between p-3 border rounded-lg"
-                >
-                  <div className="flex items-center space-x-3">
-                    {statusItem.status === 'pending' && <span className="text-lg">⏳</span>}
-                    {statusItem.status === 'creating' && <Loader2 className="h-5 w-5 animate-spin" />}
-                    {statusItem.status === 'completed' && <CheckCircle className="h-5 w-5 text-success" />}
-                    {statusItem.status === 'error' && <XCircle className="h-5 w-5 text-red-600" />}
-                    
-                    <div className="flex flex-col">
-                      <span className="font-medium text-foreground">
-                        {statusItem.student.firstName} {statusItem.student.lastInitial}.
-                      </span>
-                      <span className="text-sm text-muted-foreground">{getStatusText(statusItem.status)}</span>
-                      {statusItem.error && (
-                        <span className="text-sm text-red-600">{statusItem.error}</span>
-                      )}
-                    </div>
-                  </div>
-                  
-                  {statusItem.status === 'completed' && showPDFOptions && (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => handleDownloadIndividualPDF(statusItem.student)}
-                      title="Download PDF credentials"
-                    >
-                      <Download className="h-4 w-4" />
-                    </Button>
-                  )}
-                  
-                  {statusItem.status === 'error' && (
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => retryIndividualAccount(index)}
-                      title="Retry account creation"
-                      className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
-                    >
-                      <RotateCcw className="h-4 w-4" />
-                    </Button>
-                  )}
-                </div>
-              ))}
+          {hasErrors && overallStatus === 'completed' && (
+            <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-md">
+              <p className="text-sm text-yellow-800">
+                {errorCount} account{errorCount !== 1 ? 's' : ''} failed to create. 
+                Only {completedCount} credential{completedCount !== 1 ? 's' : ''} will be downloaded.
+              </p>
             </div>
-          </CardContent>
-        </Card>
-      )}
-
-      {showPDFOptions && (
-        <Card ref={downloadSectionRef}>
-          <CardHeader className="pb-3">
-            <CardTitle className="text-base">Download printable credentials</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-4">
-            <p className="text-sm text-muted-foreground">
-              Download PDF files with login credentials. You can print these and give them to your students.
-            </p>
-            
-            <Button
-              onClick={handleDownloadAllPDFs}
-              disabled={completedCount === 0}
-              className="w-full"
-            >
-              <Download className="h-4 w-4 mr-2" />
-              Download all credentials ({completedCount} students)
-            </Button>
-
-          </CardContent>
-        </Card>
-      )}
+          )}
+        </CardContent>
+      </Card>
 
     </div>
   );
