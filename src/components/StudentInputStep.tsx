@@ -5,7 +5,7 @@ import { Student } from '../types/Student';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Card, CardContent } from './ui/card';
-import { Upload, FileSpreadsheet } from 'lucide-react';
+import { CloudUpload } from 'lucide-react';
 
 interface StudentInputStepProps {
   onNext: (data: { students: Student[] }) => void;
@@ -188,12 +188,7 @@ const StudentInputStep = forwardRef<StudentInputStepRef, StudentInputStepProps>(
           >
             <div className="flex items-center justify-center space-x-3">
               <div className="flex-shrink-0">
-                <div className="relative">
-                  <FileSpreadsheet className="h-12 w-12 text-gray-400" />
-                  <div className="absolute -top-1 -right-1 bg-blue-600 rounded-full p-0.5">
-                    <Upload className="h-3 w-3 text-white" />
-                  </div>
-                </div>
+                <CloudUpload className="h-12 w-12 text-blue-600" />
               </div>
               
               <div className="flex-1 min-w-0">
