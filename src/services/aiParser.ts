@@ -17,48 +17,84 @@ interface AIParsingResponse {
   students: Array<{
     firstName: string;
     lastName: string;
+    confidence?: number;
   }>;
   errors?: string[];
+  contentType?: 'student_list' | 'mixed_content' | 'unlikely_student_content';
+  confidence?: number;
+  warnings?: string[];
 }
 
+// Validation helper function
+const validateExtractedData = (aiResponse: AIParsingResponse): { needsValidation: boolean } => {
+  const { students, contentType, confidence } = aiResponse;
+  
+  // Check if validation is needed based on multiple factors
+  const needsValidation = 
+    contentType === 'unlikely_student_content' ||
+    contentType === 'mixed_content' ||
+    (confidence && confidence < 0.7) ||
+    students.length === 0 ||
+    students.some(student => (student.confidence || 0) < 0.6) ||
+    students.length > 50; // Suspiciously high number might indicate bad parsing
+    
+  return { needsValidation };
+};
+
 export const parseStudentDataWithAI = async (input: string): Promise<ParsedStudentData> => {
+  // Truncate input if it's too large for API (GitHub Models has token limits)
+  const maxLength = 8000; // Conservative limit to avoid 413 errors
+  const truncatedInput = input.length > maxLength 
+    ? input.substring(0, maxLength) + '\n\n[Content truncated due to length...]'
+    : input;
+    
   // Debug logging
   console.log('🔍 AI Parser Debug Info:');
   console.log('- Token loaded:', process.env.REACT_APP_GITHUB_TOKEN ? 'YES' : 'NO');
   console.log('- Token preview:', process.env.REACT_APP_GITHUB_TOKEN?.substring(0, 10) + '...');
   console.log('- Base URL:', openai.baseURL);
-  console.log('- Input text:', input);
+  console.log('- Input length:', input.length, 'characters');
+  console.log('- Truncated:', input.length > maxLength);
+  console.log('- Processing length:', truncatedInput.length, 'characters');
 
   try {
     const prompt = `
-You are an AI assistant that extracts student names from various text formats. 
-Parse the following text and extract all student names. Be very flexible - the input could be:
-- A simple list of names
-- Names in a table or structured format
-- Names mixed with other text
-- Different name formats (First Last, Last First, etc.)
-- Names with titles, grades, or other information
+You are an AI assistant that extracts and validates student names from text. 
+
+FIRST, analyze if this content likely contains student names:
+- Student rosters, class lists, enrollment data = "student_list" 
+- Mixed content with some names = "mixed_content"
+- Technical docs, articles, random text = "unlikely_student_content"
+
+THEN, if names are found, validate each one:
+- Real names (John, Maria, Chen) = high confidence (0.8-1.0)
+- Questionable but possible names = medium confidence (0.4-0.7)  
+- Gibberish, random words, technical terms = low confidence (0.0-0.3)
 
 Input text:
 """
-${input}
+${truncatedInput}
 """
 
 Return ONLY a valid JSON object in this exact format:
 {
+  "contentType": "student_list|mixed_content|unlikely_student_content",
+  "confidence": 0.85,
   "students": [
-    {"firstName": "John", "lastName": "Smith"},
-    {"firstName": "Jane", "lastName": "Doe"}
+    {"firstName": "John", "lastName": "Smith", "confidence": 0.9},
+    {"firstName": "Jane", "lastName": "Doe", "confidence": 0.8}
   ],
+  "warnings": ["Found technical terms that might not be names"],
   "errors": []
 }
 
-Rules:
-- Extract only actual student names, ignore titles, grades, or other text
-- If you can't determine a last name, use an empty string
-- If a name is unclear or might not be a student name, include it in errors array
-- Be liberal in interpretation - when in doubt, include the name
-- Handle various formats: "John Smith", "Smith, John", "John", etc.
+STRICT VALIDATION RULES:
+- Only extract text that looks like actual human names
+- Reject technical terms, random words, gibberish  
+- Names must be 2-15 characters, mostly letters
+- If overall content seems unrelated to students, set contentType accordingly
+- Be conservative - when in doubt, mark as low confidence or exclude
+- Provide specific warnings about questionable content
 `;
 
     console.log('🚀 Making API request to GitHub Models...');
@@ -95,22 +131,31 @@ Rules:
       throw new Error('Invalid AI response format');
     }
 
-    // Convert AI response to our format
-    const students: Student[] = aiResponse.students.map(student => {
-      const firstName = student.firstName.trim();
-      const lastInitial = student.lastName.trim().charAt(0).toUpperCase();
-      return {
-        id: generateUniqueId(),
-        firstName,
-        lastInitial,
-        password: generatePassword(),
-        username: generateUsername(firstName, lastInitial)
-      };
-    });
+    // Validate the AI response and add quality checks
+    const validationResult = validateExtractedData(aiResponse);
+    
+    // Convert AI response to our format, filtering out low-confidence names
+    const students: Student[] = aiResponse.students
+      .filter(student => (student.confidence || 0.5) >= 0.4) // Only include medium+ confidence
+      .map(student => {
+        const firstName = student.firstName.trim();
+        const lastInitial = student.lastName.trim().charAt(0).toUpperCase();
+        return {
+          id: generateUniqueId(),
+          firstName,
+          lastInitial,
+          password: generatePassword(),
+          username: generateUsername(firstName, lastInitial)
+        };
+      });
 
     return {
       students,
-      errors: aiResponse.errors || []
+      errors: aiResponse.errors || [],
+      warnings: aiResponse.warnings || [],
+      contentType: aiResponse.contentType,
+      confidence: aiResponse.confidence,
+      needsValidation: validationResult.needsValidation
     };
 
   } catch (error) {
@@ -121,6 +166,30 @@ Rules:
       response: (error as any)?.response?.data,
       stack: error instanceof Error ? error.stack : undefined
     });
+    
+    // Check if it's a 413 error (request too large) and provide specific message
+    if ((error as any)?.status === 413) {
+      return {
+        students: [],
+        errors: ['File content is too large for AI processing. Please try a smaller file or one with less content.'],
+        warnings: ['Large files may contain too much text for accurate name extraction.'],
+        contentType: 'unlikely_student_content',
+        confidence: 0,
+        needsValidation: true
+      };
+    }
+    
+    // For other API errors, provide more helpful messages
+    if ((error as any)?.status >= 400 && (error as any)?.status < 500) {
+      return {
+        students: [],
+        errors: ['Unable to process with AI. Please check your file format and try again.'],
+        warnings: ['AI processing is temporarily unavailable.'],
+        contentType: 'unlikely_student_content',
+        confidence: 0,
+        needsValidation: true
+      };
+    }
     
     // Fallback to basic parsing if AI fails
     return fallbackParsing(input);

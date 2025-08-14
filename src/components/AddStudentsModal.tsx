@@ -12,7 +12,7 @@ import {
   DialogTitle,
 } from './ui/dialog';
 import { Button } from './ui/button';
-import { Check } from 'lucide-react';
+import { Check, Loader2 } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 interface AddStudentsModalProps {
@@ -185,7 +185,14 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
               }}
               disabled={(!hasInputText && !hasUploadedFile) || inputStepLoading}
             >
-              {inputStepLoading ? 'Processing...' : 'Continue'}
+              {inputStepLoading ? (
+                <>
+                  <Loader2 className="h-4 w-4 mr-2 animate-spin" />
+                  Processing...
+                </>
+              ) : (
+                'Continue'
+              )}
             </Button>
           </div>
         );
@@ -346,7 +353,7 @@ const AddStudentsModal: React.FC<AddStudentsModalProps> = ({ isOpen, onClose }) 
             </p>
             <div className="flex justify-end space-x-2">
               <Button variant="outline" onClick={handleCancelClose}>
-                Cancel
+                Stay
               </Button>
               <Button variant="destructive" onClick={handleForceClose}>
                 Close and lose progress

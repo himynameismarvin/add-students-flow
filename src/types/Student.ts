@@ -16,6 +16,10 @@ export interface StudentFormData {
 export interface ParsedStudentData {
   students: Student[];
   errors: string[];
+  warnings?: string[];
+  contentType?: 'student_list' | 'mixed_content' | 'unlikely_student_content';
+  confidence?: number;
+  needsValidation?: boolean;
 }
 
 export type ModalStep = 'accountType' | 'input' | 'review' | 'creation' | 'linkExisting';
